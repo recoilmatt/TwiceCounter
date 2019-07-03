@@ -4,16 +4,32 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
+	<title>TWICE Counter</title>
+	<!--CSS Related Stuff-->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="animate.css">
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="skeleton.css">
+
+
 </head>
 <body>
-<div id="twiceTitle">Days Until Twicelights</div>
+<div class="container">
+	<div class="row">
+		<div class="six columns">
+
+<div id="twiceTitle"><h1>Days Until Twicelights!</h1></div>
 <div id="countdown"></div>
-<div id="twiceGif"></div>
 <p>pick your bias</p>
-<button value="Refresh Page" onClick="window.location.reload();">random</button>
-<button id="dahyun">dahyun</button>
-<button id="bias" data-search="tzuyu">tzuyu</button>
+<button value="Refresh Page" onClick="window.location.reload();" class="btn">random</button>
+<button id="dahyun" class="btn">dahyun</button>
+<button id="tzuyu" class="btn" data-search="tzuyu">tzuyu</button>
+</div>
+<div class="six columns">
+	<div id="twiceGif" class="animated fadeIn delay-1s"></div>
+</div>
+</div>
+</div>
 </body>
 
 <script src="script.js"></script>
