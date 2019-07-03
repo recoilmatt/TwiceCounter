@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function twiceLoad() {
 	q = "twice+tt+kpop"; // search query
 	function request() {
 	request = new XMLHttpRequest;
-	request.open('GET', 'http://api.giphy.com/v1/gifs/random?api_key=a2EKEhAR1KwNd5wQPVb3tIZ8dkSlMWZ3&limit=30&tag='+q, true);
+	request.open('GET', '//api.giphy.com/v1/gifs/random?api_key=a2EKEhAR1KwNd5wQPVb3tIZ8dkSlMWZ3&limit=30&tag='+q, true);
 }
 	request();
 	request.onload = function() {
@@ -47,7 +47,7 @@ tzuyu.onclick = function twiceLoad() {
 	q = "tzuyu+twice+저우쯔위"; // search query
 	function request() {
 	request = new XMLHttpRequest;
-	request.open('GET', 'http://api.giphy.com/v1/gifs/random?api_key=a2EKEhAR1KwNd5wQPVb3tIZ8dkSlMWZ3&limit=30&tag='+q, true);
+	request.open('GET', '//api.giphy.com/v1/gifs/random?api_key=a2EKEhAR1KwNd5wQPVb3tIZ8dkSlMWZ3&limit=30&tag='+q, true);
 }
 	request();
 	request.onload = function() {
