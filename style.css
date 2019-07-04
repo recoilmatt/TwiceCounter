@@ -17,50 +17,34 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 }
 body {
+	margin: 0;
+  padding: 0;
 	font-family: 'Nanum Gothic', sans-serif;
 }
 
-
-/* General button style (reset) */
-.btn {
-	border: none;
-	font-family: inherit;
-	font-size: inherit;
-	color: inherit;
-	background: none;
-	cursor: pointer;
-	padding: 10px;
-	display: inline-block;
-
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-weight: 700;
-	outline: none;
-	position: relative;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
+#twiceTitle {
+	padding-top: 50px;
+}
+#twiceTwice h1 {
+	font-weight: 600;
 }
 
-.btn:after {
-	content: '';
-	position: absolute;
-	z-index: -1;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-}
 
-/* Button 1 */
-.btn{
-	border: 3px solid red;
-	color: red;
-	border-radius: 6px;
+.twiceBorder {
+	margin-top: 60px;
+	padding: 30px;
+	border: 1px solid #f5f5f5;
+	border-radius: 8px;
 }
-
-/* Button 1a */
-.btn:hover,
-.btn:active {
-	color: #0e83cd;
-	background: #fff;
+.twiceBar {
+	width: 100% !important;
+	height: 20px;
+	background: rgb(252,207,166);
+background: linear-gradient(90deg, rgba(252,207,166,1) 0%, rgba(253,182,165,1) 29%, rgba(254,151,164,1) 52%, rgba(254,123,163,1) 69%, rgba(255,95,162,1) 100%);
+	box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+}
+.btn:hover {
+	background-color: black;
+	color: white;
+	transition-delay: 0.1s;
 }

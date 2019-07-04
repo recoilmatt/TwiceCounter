@@ -3,17 +3,17 @@
 let appId = 'a2EKEhAR1KwNd5wQPVb3tIZ8dkSlMWZ3'
 
 document.addEventListener('DOMContentLoaded', function twiceLoad() {
-	q = "twice+tt+kpop"; // search query
+	q = "twice+kpop"; // search query
 	function request() {
 	request = new XMLHttpRequest;
-	request.open('GET', '//api.giphy.com/v1/gifs/random?api_key=a2EKEhAR1KwNd5wQPVb3tIZ8dkSlMWZ3&limit=30&tag='+q, true);
+	request.open('GET', 'https://api.giphy.com/v1/gifs/random?api_key=a2EKEhAR1KwNd5wQPVb3tIZ8dkSlMWZ3&limit=30&tag='+q, true);
 }
 	request();
 	request.onload = function() {
 		if (request.status >= 200 && request.status < 400){
 			data = JSON.parse(request.responseText).data.image_url;
 			console.log(data);
-			document.getElementById("twiceGif").innerHTML = '<center><img src = "'+data+'"  title="GIF via Giphy"></center>';
+			document.getElementById("twiceGif").innerHTML = '<img src = "'+data+'" class="twiceBorder" title="twice is life">';
 		} else {
 			console.log('reached giphy, but API returned an error');
 		 }
@@ -47,7 +47,7 @@ tzuyu.onclick = function twiceLoad() {
 	q = "tzuyu+twice+저우쯔위"; // search query
 	function request() {
 	request = new XMLHttpRequest;
-	request.open('GET', '//api.giphy.com/v1/gifs/random?api_key=a2EKEhAR1KwNd5wQPVb3tIZ8dkSlMWZ3&limit=30&tag='+q, true);
+	request.open('GET', 'https://api.giphy.com/v1/gifs/random?api_key=a2EKEhAR1KwNd5wQPVb3tIZ8dkSlMWZ3&limit=30&tag='+q, true);
 }
 	request();
 	request.onload = function() {
@@ -101,4 +101,4 @@ var x = setInterval(function() {
 
 //styling
 
-countdown.style.fontSize = '10vh';
+countdown.style.fontSize = '7vh';
