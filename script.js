@@ -6,7 +6,7 @@ function twiceLoad(member) {
 	q = member; // search query
 	function request() {
 	request = new XMLHttpRequest;
-	request.open('GET', 'http://api.giphy.com/v1/gifs/random?api_key=a2EKEhAR1KwNd5wQPVb3tIZ8dkSlMWZ3&tag='+q, true);
+	request.open('GET', 'https://api.giphy.com/v1/gifs/random?api_key=a2EKEhAR1KwNd5wQPVb3tIZ8dkSlMWZ3&tag='+q, true);
 }
 	request();
 	request.onload = function() {
